@@ -31,4 +31,5 @@ If you plan on resusing components with different data throughout the app, then 
 
 ## Thunk
 
-Dispatch an action which calls a thunk (the middleware) which does the API call. This creates a normal action with the API responce which is sent to the reducer within the store.
+With redux components still contain side-effects, the logic for asynchronous opperation, such as fetching or updating server data. Thunk is a side-effects library to handle these operations. Components dispatch an action which calls a thunk (the middleware) which does the API call. This creates a normal action with the API response which is sent to the reducer within the store.
+Thunks take two arguments, dispatch and getState.
